@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import AdminRoute from "./routes/AdminRoute";
@@ -8,9 +9,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/" element={<AdminRoute />} />
+          <Route path="/*" element={<AdminRoute />} />
         </Routes>
-        {/* <ToastContainer /> */}
       </Router>
     </>
   );
