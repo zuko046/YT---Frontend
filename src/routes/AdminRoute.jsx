@@ -10,7 +10,7 @@ const AdminRoute = () => {
       <Route path="*" element={<HomeLayoutPage />}>
         <Route index element={<Dashboard />} />
         <Route path="payment" element={<Payment />} />
-        {/* Add rest of the routes ... */} 
+        {/* Add rest of the routes ... */}
       </Route>
     </Routes>
   );
