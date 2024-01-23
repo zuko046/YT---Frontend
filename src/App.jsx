@@ -9,7 +9,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/*" element={<AdminRoute />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<AdminRoute />} />
         </Routes>
       </Router>
     </>
