@@ -1,3 +1,4 @@
+// AdminRoute.js
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomeLayoutPage from "../pages/HomeLayoutPage";
@@ -11,7 +12,7 @@ const AdminRoute = () => {
         <Route path="*" element={<HomeLayoutPage />}>
           <Route index element={<Dashboard />} />
           <Route path="payment" element={<Payment />} />
-          {/* rest of the routes ... */}
+          {/* Add rest of the routes ... */}
         </Route>
       </Routes>
     </>
